@@ -1,0 +1,50 @@
+require "./RBCalculator.rb"
+
+testInput = "42"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "-42"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4+3"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4+3*2"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4*3+2"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4*(3+2)"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4*-(3+2)"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "(4*(2+3))+5"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4+-3"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}
+"
+testInput = "5+--2"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = "4f5+2"
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
+testInput = ""
+result = Calculator.evaluateInput(testInput)
+puts"For input #{testInput}, returned #{result}"
+
